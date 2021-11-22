@@ -41,10 +41,22 @@ li {
     font-size: 36px;
     font-weight: bold;
     flex: 1;
+    padding: 10px;
     }
 
-.subscribe {
+.subscribe1 {
   background-color: white;
+  margin-right:50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+.subscribe2 {
+  background-color: #F2B366;
+  margin-right:50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .logo {
@@ -57,7 +69,7 @@ li {
   margin-bottom: 50px;
 }
 
-p {
+.covid {
   color: white;
   text-align: center;
   margin-left: 550px;
@@ -75,19 +87,92 @@ h1 {
 
 main {
   text-align: center;
-  margin-left: 500px;
-  margin-right: 500px;  
+  margin-left: 400px;
+  margin-right: 400px;
+  color: white;
+  display: flex;  
 }
 
-.events {
+.event {
   font-family: 'Limelight', serif;
-  font-size: 24px;
+  font-size: 48px;
   color:white;
+  width: 100%; 
 }
 
-.dates {
-  color:white;
+.month {
   font-family: 'Poppins', sans-serif;
 }
 
+.date {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: bolder;
+}
 
+.day {
+  font-family: 'Poppins', sans-serif;
+}
+
+.poster {
+  width:300px;
+  height: 100%;
+}
+
+.time {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+.doors {
+  font-family: 'Poppins', sans-serif;
+}
+
+.buytickets {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: bolder;
+  color: #250101;
+  background-color: #F2B366;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.loungediv {
+  display: flex;
+  margin-top: 100px;
+}
+
+.loungetext {
+  color:white;
+  font-family: 'Poppins', sans-serif;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+.loungepic {
+  margin-right: 200px;
+  margin-left: 200px;
+  width: 100%;
+}
+
+.about {
+  column-count: 2;
+  column-gap: 50px;
+  color:white;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: white;
+  font-family: 'Limelight', serif;
+  text-align: center;
+}
