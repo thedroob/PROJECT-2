@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Poppins:wght@400;700;900&display=swap');
+
 * {box-sizing:border-box;}
 body {margin:0; background-color: #250101;}
 img {width: 100%;}
@@ -35,7 +37,57 @@ ul {
   
 li {
     text-align: center;
-    font-family: 'Source Sans Pro';
-    font-size: 24px;
+    font-family: 'Limelight', serif;
+    font-size: 36px;
+    font-weight: bold;
     flex: 1;
     }
+
+.subscribe {
+  background-color: white;
+}
+
+.logo {
+  width: 640px;
+  height: 675px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+p {
+  color: white;
+  text-align: center;
+  margin-left: 550px;
+  margin-right: 550px;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #F2B366;
+  text-align: center;
+  font-size: 96px;
+  margin-top: 50px;
+}
+
+main {
+  text-align: center;
+  margin-left: 500px;
+  margin-right: 500px;  
+}
+
+.events {
+  font-family: 'Limelight', serif;
+  font-size: 24px;
+  color:white;
+}
+
+.dates {
+  color:white;
+  font-family: 'Poppins', sans-serif;
+}
+
+
