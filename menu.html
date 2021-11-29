@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animate-it/animations.css">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Hawthorne Theater</title>
 </head>
 <body>
 
-  <nav>
-      <ul>
-        <li><a href="index.html"><b> Home </a></b></li>
-        <li><a href="events.html"><b> Events </b></a></li>
-        <li><a href="lounge.html"><b> Lounge </b></a></li>
-        <li><a href="about.html"><b> About </b></a></li>
-        <li><a href="menu.html"><b> Menu </b></a></li>
-      </ul>
-    </nav>
+  <nav class="animatedParent" data-sequence="1000">
+    <ul class="animated fadeInDown" data-id="1">
+      <li><a href="index.html"><b> Home </a></b></li>
+      <li><a href="events.html"><b> Events </b></a></li>
+      <li><a href="lounge.html"><b> Lounge </b></a></li>
+      <li><a href="about.html"><b> About </b></a></li>
+      <li><a href="menu.html"><b> Menu </b></a></li>
+    </ul>
+  </nav>
 
  <h1> Menu </h1>
 
@@ -29,5 +30,8 @@
   </ul>
  </div> 
 
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="animate-it/css3-animate-it.js"></script>
+ <script src="script.js"></script>
 </body>
 </html>

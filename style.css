@@ -26,7 +26,7 @@ nav a {
     height:100%;
   }
 nav a:hover {
-    color:saddlebrown;
+    color: #250101;  
   }
 
 ul {
@@ -79,12 +79,34 @@ li {
   font-family: 'Poppins', sans-serif;
 }
 
+.policy {
+  animation: look-here 1s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+  color: white;
+  text-align: center;
+  margin-left: 550px;
+  margin-right: 550px;
+  font-family: 'Poppins', sans-serif;
+}
+
+@keyframes look-here {
+  from {
+      transform: translateY(-100%);
+  }
+
+  to {
+      transform: translateY(10%);
+  }
+}
+
 h1 {
   font-family: 'Poppins', sans-serif;
   color: #F2B366;
   text-align: center;
   font-size: 96px;
   margin-top: 50px;
+  font-weight: bold;
 }
 
 main {
@@ -99,10 +121,14 @@ main {
 .event {
   width: 100%; 
 }
+
 .event p {
   font-family: 'Limelight', serif;
   font-size: 48px;
   color:white;
+}
+.event p:hover {
+  color:#F2B366;
 }
 .event-inner {
   display:flex;
@@ -122,16 +148,22 @@ main {
   font-size: 24px;
 }
 
+
+
 .date {
   font-family: 'Poppins', sans-serif;
   font-size: 144px;
   font-weight: bolder;
 }
 
+
+
 .day {
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
 }
+
+
 
 .poster {
   width:300px;
@@ -145,10 +177,18 @@ main {
   margin-right: 20px;
 }
 
+.time:hover {
+  color:#F2B366;
+}
+
 .doors {
   font-family: 'Poppins', sans-serif;
   align-self: flex-end;
   padding-bottom: 12px;
+}
+
+.doors:hover {
+  color:#F2B366;
 }
 
 .buytickets {
@@ -160,11 +200,20 @@ main {
   padding: 36px;
 }
 
+.buytickets:hover {
+  color:#F2B366;
+  background-color: #8B0303;
+}
+
 .left-column {
 flex: 25%;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+}
+
+.left-column:hover {
+  color: #F2B366;
 }
 
 .right-column {
@@ -229,6 +278,10 @@ h2 {
 
 .menu {
   width: 350px;
+}
+
+.hideme {
+  display: none;
 }
 
 @media screen and (max-width:560px) {

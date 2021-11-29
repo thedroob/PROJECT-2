@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
+    <link rel="stylesheet" href="animate-it/animations.css">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Hawthorne Theater</title>
 </head>
 <body>
 
-  <nav>
-      <ul>
-        <li><a href="index.html"><b> Home </a></b></li>
-        <li><a href="events.html"><b> Events </b></a></li>
-        <li><a href="lounge.html"><b> Lounge </b></a></li>
-        <li><a href="about.html"><b> About </b></a></li>
-        <li><a href="menu.html"><b> Menu </b></a></li>
-      </ul>
-    </nav>
+  <nav class="animatedParent" data-sequence="1000">
+    <ul class="animated fadeInDown" data-id="1">
+      <li><a href="index.html"><b> Home </a></b></li>
+      <li><a href="events.html"><b> Events </b></a></li>
+      <li><a href="lounge.html"><b> Lounge </b></a></li>
+      <li><a href="about.html"><b> About </b></a></li>
+      <li><a href="menu.html"><b> Menu </b></a></li>
+    </ul>
+  </nav>
 
  <h1> About </h1>
 
@@ -43,6 +45,32 @@
   <p>The contrast between contemporary musical acts playing in a building steeped in history is part of what makes this venue so unique. In a city that, in the last few years, has been plagued by the demolition of old buildings for the construction of high priced luxury flats, the Hawthorne feels distinctly Old Portland. </p>
    
  </div>
+
+ <main class="gallery">
+
+  <div class="card">
+
+    <h2> Photos </h2>
+    <a href="images/pic1.jpg" data-lightbox="example-set"><img src="images/pic1.jpg" class="example-image" /></a>
+    <!-- <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" /></a> -->
+
+   <div class="hideme">
+
+    <a class="example-image-link" href="images/pic1.jpg"><img class="example-image" src="images/pic1.jpg" /></a>
+    <a class="example-image-link" href="images/pic2.jpg"><img class="example-image" src="images/pic2.jpg" /></a>
+    <a class="example-image-link" href="images/pic3.jpg"><img class="example-image" src="images/pic3.jpg" /></a>
+    <a class="example-image-link" href="images/pic4.jpg"><img class="example-image" src="images/pic4.jpg" /></a>
+    <a class="example-image-link" href="images/pic5.jpg"><img class="example-image" src="images/pic5.jpg" /></a>
+
+  </div>
+ </div>
+
+ </main>
+
+ <script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ <script src="animate-it/css3-animate-it.js"></script>
+ <script src="script.js"></script>
 
 </body>
 </html>
