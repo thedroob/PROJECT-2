@@ -35,7 +35,11 @@ ul {
     margin-left:150px;
     margin-right:150px;
   }
-
+#sub-form {
+  display:flex;
+  margin-left:150px;
+  margin-right:150px;
+}
 
 li {
     text-align: center;
@@ -45,6 +49,23 @@ li {
     flex: 1;
     padding: 10px;
     }
+
+input, button {
+  text-align: center;
+    font-family: 'Limelight', serif;
+    font-size: 36px;
+    font-weight: bold;
+    flex: 1;
+    padding: 10px;
+    display: inline-block;
+}
+
+button {
+  background-color: #F2B366;
+  margin-right:50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
 
 .subscribe1 {
   background-color: white;
@@ -81,12 +102,13 @@ li {
 
 .policy {
   animation: look-here 1s ease-in-out infinite alternate;
+  animation-iteration-count: 5;
   transform-origin: center;
   transform-box: fill-box;
   color: white;
   text-align: center;
-  margin-left: 550px;
-  margin-right: 550px;
+  margin:auto; 
+  width:90%;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -209,8 +231,11 @@ main {
 flex: 25%;
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+
 }
+
+.left-column div {margin-bottom: 10px;}
+
 
 .left-column:hover {
   color: #F2B366;
@@ -333,7 +358,8 @@ h2 {
 @media screen and (max-width:560px) {
   .loungediv {
     text-align: center;
-    display: block;
+    flex-direction: column-reverse;
+
   }
 }
 
@@ -341,7 +367,7 @@ h2 {
   .loungetext {
     margin-left: 10px;
     margin-right: 10px;
-    order: 2;
+    
     font-size: 14px;
     text-align: center;
   }
@@ -351,7 +377,7 @@ h2 {
   .loungepic {
     margin-left: 10px;
     margin-right: 10px;
-    order: 1;
+    
   }
 }
 
