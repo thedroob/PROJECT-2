@@ -8,6 +8,7 @@ a {text-decoration: none;}
 nav ul {
     display: flex;
     list-style-type:none;
+    margin-top: 20px;
   }
 nav li {
     flex: 1;
@@ -32,13 +33,13 @@ nav a:hover {
 ul {
     display: flex;
     list-style-type:none;
-    margin-left:150px;
-    margin-right:150px;
+    width: 80%;
+    margin: auto;
   }
 #sub-form {
   display:flex;
-  margin-left:150px;
-  margin-right:150px;
+  width: 80%;
+  margin: auto;
 }
 
 li {
@@ -52,9 +53,9 @@ li {
 
 input, button {
   text-align: center;
-    font-family: 'Limelight', serif;
-    font-size: 36px;
-    font-weight: bold;
+    font-family: 'Poppins', serif;
+    font-size: 18px;
+    font-weight: normal;
     flex: 1;
     padding: 10px;
     display: inline-block;
@@ -65,6 +66,7 @@ button {
   margin-right:50px;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .subscribe1 {
@@ -80,6 +82,7 @@ button {
   margin-right:50px;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .logo {
@@ -95,8 +98,9 @@ button {
 .covid {
   color: white;
   text-align: center;
-  margin-left: 550px;
-  margin-right: 550px;
+  width: 45%;
+  margin: auto;
+  margin-bottom: 20px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -133,8 +137,8 @@ h1 {
 
 main {
   text-align: center;
-  margin-left: 400px;
-  margin-right: 400px;
+  margin: auto;
+  width: 60%;
   margin-bottom: 100px;
   color: white;
   display: flex;  
@@ -148,6 +152,7 @@ main {
   font-family: 'Limelight', serif;
   font-size: 48px;
   color:white;
+  text-align: left;
 }
 .event p:hover {
   color:#F2B366;
@@ -162,7 +167,7 @@ main {
 .details {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .month {
@@ -194,7 +199,7 @@ main {
 
 .time {
   font-family: 'Poppins', sans-serif;
-  font-size: 36px;
+  font-size: 48px;
   font-weight: bolder;
   margin-right: 20px;
 }
@@ -220,6 +225,7 @@ main {
   color: #250101;
   background-color: #F2B366;
   padding: 36px;
+  text-align: center;
 }
 
 .buytickets:hover {
@@ -234,7 +240,7 @@ flex-direction: column;
 
 }
 
-.left-column div {margin-bottom: 10px;}
+
 
 
 .left-column:hover {
@@ -244,6 +250,7 @@ flex-direction: column;
 .right-column {
 flex: 50%;
 margin: 0 20px;
+text-align: left;
 }
 
 .poster {
@@ -271,13 +278,20 @@ flex: 25%;
   flex: 50%;
 }
 
+.loungepic:hover {
+  animation: menu 1s ease-in-out infinite alternate;
+  animation-iteration-count: 1;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
 .about {
   column-count: 2;
   column-gap: 50px;
   color:white;
   font-family: 'Poppins', sans-serif;
-  margin-left: 150px;
-  margin-right: 150px;
+  width: 80%;
+  margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -303,6 +317,23 @@ h2 {
 
 .menu {
   width: 350px;
+}
+
+.menu:hover {
+  animation: menu 1s ease-in-out infinite alternate;
+  animation-iteration-count: 1;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes menu {
+  from {
+      transform: translateY(-1%);
+  }
+
+  to {
+      transform: translateY(1%);
+  }
 }
 
 .hideme {
